@@ -5,6 +5,8 @@ SUBLEVEL = 320
 EXTRAVERSION =
 NAME = Petit Gorille
 
+ARCH = arm64
+CROSS_COMPILE = aarch64-linux-gnu-
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
 # More info can be located in ./README
@@ -1033,7 +1035,7 @@ LDFLAGS_vmlinux	+= $(call ld-option, -X,)
 endif
 
 ifeq ($(CONFIG_RELR),y)
-LDFLAGS_vmlinux	+= --pack-dyn-relocs=relr --use-android-relr-tags
+#LDFLAGS_vmlinux	+= --pack-dyn-relocs=relr --use-android-relr-tags
 endif
 
 # Default kernel image to build when no specific target is given.

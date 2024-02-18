@@ -1,5 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0
 ifeq ($(CONFIG_ARCH_ATOLL),y)
+dtb-y  += joyeuse-atoll-ab-idp.dtb
+
 ifeq ($(CONFIG_BUILD_ARM64_DT_OVERLAY),y)
 dtbo-y  += curtana-atoll-ab-idp-overlay.dtbo \
            excalibur-atoll-ab-idp-overlay.dtbo \
