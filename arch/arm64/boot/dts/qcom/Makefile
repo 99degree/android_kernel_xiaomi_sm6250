@@ -603,6 +603,11 @@ endif
 
 endif
 
+dtb-$(CONFIG_ARCH_ATOLL)  := curtana-atoll-ab-idp.dtb \
+           excalibur-atoll-ab-idp.dtb \
+           gram-atoll-ab-idp.dtb \
+           joyeuse-atoll-ab-idp.dtb
+
 ifeq ($(CONFIG_ARM64),y)
 always		:= $(dtb-y)
 subdir-y	:= $(dts-dirs)

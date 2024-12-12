@@ -10,13 +10,13 @@
  * GNU General Public License for more details.
  */
 
+#include <dt-bindings/clock/mdss-10nm-pll-clk.h>
 #include "dsi-panel-rm69299-visionox-amoled-fhd-plus-video.dtsi"
 #include "dsi-panel-rm69299-visionox-amoled-fhd-plus-cmd.dtsi"
 #include "dsi-panel-sim-video.dtsi"
 #include "dsi-panel-sim-cmd.dtsi"
 #include "dsi-panel-sim-dsc375-cmd.dtsi"
 #include "dsi-panel-nt36672c-fhd-plus-video.dtsi"
-#include <dt-bindings/clock/mdss-10nm-pll-clk.h>
 
 &soc {
 	dsi_panel_pwr_supply: dsi_panel_pwr_supply {
